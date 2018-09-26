@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2959794E196A2F883DA602F4 /* Pods_SurfingGood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055492E2037DBFCDAA8B2826 /* Pods_SurfingGood.framework */; };
+		50009EDD20F6300700B7C71C /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50009EDC20F6300700B7C71C /* LocationSearchTableViewController.swift */; };
+		5016CBA021513FB70032C1DF /* ARSeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016CB9F21513FB70032C1DF /* ARSeaViewController.swift */; };
+		5020177720E12E0200BDA802 /* FoodAndHotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5020177620E12E0200BDA802 /* FoodAndHotel.swift */; };
+		502287B120E12A7B00F4FD34 /* FoodAndHotelMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502287B020E12A7B00F4FD34 /* FoodAndHotelMapViewController.swift */; };
+		5025C1C620C04CFB005E0BAB /* TideStationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5025C1C520C04CFB005E0BAB /* TideStationCollectionViewController.swift */; };
+		502FE7C220EA704300290838 /* FoodAndHotelModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 502FE7C020EA704300290838 /* FoodAndHotelModel.xcdatamodeld */; };
+		502FE7D020EA739800290838 /* foodAndHotelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502FE7CF20EA739800290838 /* foodAndHotelDataService.swift */; };
+		503BBC2620D1581B00EDD8CE /* FoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503BBC2520D1581B00EDD8CE /* FoodMapViewController.swift */; };
+		5040D49F20E51AF30090A88C /* FoodAndHotelAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5040D49E20E51AF30090A88C /* FoodAndHotelAnnotationView.swift */; };
+		508480CD1DF5392000F0CB9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508480CC1DF5392000F0CB9A /* AppDelegate.swift */; };
+		508480D61DF5392100F0CB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508480D51DF5392100F0CB9A /* Assets.xcassets */; };
+		508480D91DF5392100F0CB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508480D71DF5392100F0CB9A /* LaunchScreen.storyboard */; };
+		508480E41DF5392100F0CB9A /* SurfingGoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508480E31DF5392100F0CB9A /* SurfingGoodTests.swift */; };
+		508480EF1DF5392100F0CB9A /* SurfingGoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508480EE1DF5392100F0CB9A /* SurfingGoodUITests.swift */; };
+		508793D32003B4FC00A68CED /* SeaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508793D22003B4FC00A68CED /* SeaTableViewController.swift */; };
+		50917B5C1E1121C700DEB70D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50917B5B1E1121C700DEB70D /* Constant.swift */; };
+		50AA958D207BA0BB003B5C1D /* SeaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50AA958B207BA0BB003B5C1D /* SeaModel.xcdatamodeld */; };
+		50AA959D207BA382003B5C1D /* surfingDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA959C207BA382003B5C1D /* surfingDataService.swift */; };
+		50B2FBA220BD8DE80055C816 /* TidalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2FBA120BD8DE80055C816 /* TidalTableViewController.swift */; };
+		50C659961E2679420041C901 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C659951E2679420041C901 /* MainTabBarController.swift */; };
+		50C659A51E267A2E0041C901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C659A31E267A2E0041C901 /* Main.storyboard */; };
+		50CEA80D1E0032870004BC38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CEA80C1E0032870004BC38 /* LoginViewController.swift */; };
+		50CFB649200E499C00F0F9AF /* ObserveStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CFB648200E499C00F0F9AF /* ObserveStationTableViewController.swift */; };
+		50D6577420C57DC800F51FF9 /* surfStationTidalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6577320C57DC800F51FF9 /* surfStationTidalCollectionViewCell.swift */; };
+		50E38F9520692EF400B2EA48 /* surfLocationViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E38F9420692EF400B2EA48 /* surfLocationViewCollectionViewCell.swift */; };
+		50E38FA3206938FF00B2EA48 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E38FA2206938FF00B2EA48 /* DashBoardViewController.swift */; };
+		50E877EE20A43E6E00753E3B /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E877ED20A43E6E00753E3B /* WeatherTableViewController.swift */; };
+		59B3E64E250377BFFB5375BA /* Pods_SurfingGoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107E1EC788B3B2D526D892ED /* Pods_SurfingGoodUITests.framework */; };
+		B14058FC0E9F3A64BE7500AF /* Pods_SurfingGoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748B318FE29E5D88AD41D1A5 /* Pods_SurfingGoodTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		508480E01DF5392100F0CB9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 508480C11DF5392000F0CB9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 508480C81DF5392000F0CB9A;
+			remoteInfo = MXviewToGo;
+		};
+		508480EB1DF5392100F0CB9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 508480C11DF5392000F0CB9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 508480C81DF5392000F0CB9A;
+			remoteInfo = MXviewToGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5015B6301DF7011F002726ED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		055492E2037DBFCDAA8B2826 /* Pods_SurfingGood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfingGood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		107E1EC788B3B2D526D892ED /* Pods_SurfingGoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfingGoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		395E98379F53C7969117E030 /* Pods-SurfingGood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfingGood.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurfingGood/Pods-SurfingGood.release.xcconfig"; sourceTree = "<group>"; };
+		50009EDC20F6300700B7C71C /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
+		5016CB9F21513FB70032C1DF /* ARSeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSeaViewController.swift; sourceTree = "<group>"; };
+		5020177620E12E0200BDA802 /* FoodAndHotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAndHotel.swift; sourceTree = "<group>"; };
+		502287B020E12A7B00F4FD34 /* FoodAndHotelMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAndHotelMapViewController.swift; sourceTree = "<group>"; };
+		5025C1C520C04CFB005E0BAB /* TideStationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TideStationCollectionViewController.swift; sourceTree = "<group>"; };
+		502FE7C120EA704300290838 /* FoodAndHotelModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodAndHotelModel.xcdatamodel; sourceTree = "<group>"; };
+		502FE7CF20EA739800290838 /* foodAndHotelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodAndHotelDataService.swift; sourceTree = "<group>"; };
+		503BBC2520D1581B00EDD8CE /* FoodMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapViewController.swift; sourceTree = "<group>"; };
+		5040D49E20E51AF30090A88C /* FoodAndHotelAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAndHotelAnnotationView.swift; sourceTree = "<group>"; };
+		508480C91DF5392000F0CB9A /* SurfingGood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfingGood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		508480CC1DF5392000F0CB9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		508480D51DF5392100F0CB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		508480D81DF5392100F0CB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		508480DA1DF5392100F0CB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		508480DF1DF5392100F0CB9A /* SurfingGoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurfingGoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		508480E31DF5392100F0CB9A /* SurfingGoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingGoodTests.swift; sourceTree = "<group>"; };
+		508480E51DF5392100F0CB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		508480EA1DF5392100F0CB9A /* SurfingGoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurfingGoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		508480EE1DF5392100F0CB9A /* SurfingGoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfingGoodUITests.swift; sourceTree = "<group>"; };
+		508480F01DF5392100F0CB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		508793D22003B4FC00A68CED /* SeaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaTableViewController.swift; sourceTree = "<group>"; };
+		50917B5B1E1121C700DEB70D /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		50AA958C207BA0BB003B5C1D /* SeaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeaModel.xcdatamodel; sourceTree = "<group>"; };
+		50AA959C207BA382003B5C1D /* surfingDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = surfingDataService.swift; sourceTree = "<group>"; };
+		50B2FBA120BD8DE80055C816 /* TidalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalTableViewController.swift; sourceTree = "<group>"; };
+		50C659951E2679420041C901 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		50C659A41E267A2E0041C901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50CEA80C1E0032870004BC38 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		50CFB648200E499C00F0F9AF /* ObserveStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveStationTableViewController.swift; sourceTree = "<group>"; };
+		50D6577320C57DC800F51FF9 /* surfStationTidalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = surfStationTidalCollectionViewCell.swift; sourceTree = "<group>"; };
+		50E38F9420692EF400B2EA48 /* surfLocationViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = surfLocationViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		50E38FA2206938FF00B2EA48 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		50E877ED20A43E6E00753E3B /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
+		5E88A9A12461BB63E950F3F2 /* Pods-SurfingGoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfingGoodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SurfingGoodTests/Pods-SurfingGoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		748B318FE29E5D88AD41D1A5 /* Pods_SurfingGoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfingGoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		787653AA0B13BB05D65CAED4 /* Pods-SurfingGoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfingGoodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurfingGoodTests/Pods-SurfingGoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		9927FA1B12C4B5CFFA8AE04A /* Pods-SurfingGood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfingGood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SurfingGood/Pods-SurfingGood.debug.xcconfig"; sourceTree = "<group>"; };
+		AFD5F46CE1A371DBC3EE95D4 /* Pods-SurfingGoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfingGoodUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurfingGoodUITests/Pods-SurfingGoodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D392E7759957ECD2DC35439C /* Pods-SurfingGoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfingGoodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SurfingGoodUITests/Pods-SurfingGoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		508480C61DF5392000F0CB9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2959794E196A2F883DA602F4 /* Pods_SurfingGood.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508480DC1DF5392100F0CB9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14058FC0E9F3A64BE7500AF /* Pods_SurfingGoodTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508480E71DF5392100F0CB9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59B3E64E250377BFFB5375BA /* Pods_SurfingGoodUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		508480C01DF5392000F0CB9A = {
+			isa = PBXGroup;
+			children = (
+				508480CB1DF5392000F0CB9A /* SurfingGood */,
+				508480E21DF5392100F0CB9A /* SurfingGoodTests */,
+				508480ED1DF5392100F0CB9A /* SurfingGoodUITests */,
+				508480CA1DF5392000F0CB9A /* Products */,
+				51A7FA45D4C744FD9CE57EDE /* Pods */,
+				EE85E5960B899E811337C506 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		508480CA1DF5392000F0CB9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				508480C91DF5392000F0CB9A /* SurfingGood.app */,
+				508480DF1DF5392100F0CB9A /* SurfingGoodTests.xctest */,
+				508480EA1DF5392100F0CB9A /* SurfingGoodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		508480CB1DF5392000F0CB9A /* SurfingGood */ = {
+			isa = PBXGroup;
+			children = (
+				508793D22003B4FC00A68CED /* SeaTableViewController.swift */,
+				50E877ED20A43E6E00753E3B /* WeatherTableViewController.swift */,
+				508480CC1DF5392000F0CB9A /* AppDelegate.swift */,
+				50AA959C207BA382003B5C1D /* surfingDataService.swift */,
+				502FE7CF20EA739800290838 /* foodAndHotelDataService.swift */,
+				50CEA80C1E0032870004BC38 /* LoginViewController.swift */,
+				50917B5B1E1121C700DEB70D /* Constant.swift */,
+				50C659A31E267A2E0041C901 /* Main.storyboard */,
+				50009EDC20F6300700B7C71C /* LocationSearchTableViewController.swift */,
+				508480D51DF5392100F0CB9A /* Assets.xcassets */,
+				508480D71DF5392100F0CB9A /* LaunchScreen.storyboard */,
+				508480DA1DF5392100F0CB9A /* Info.plist */,
+				50C659951E2679420041C901 /* MainTabBarController.swift */,
+				50CFB648200E499C00F0F9AF /* ObserveStationTableViewController.swift */,
+				50E38F9420692EF400B2EA48 /* surfLocationViewCollectionViewCell.swift */,
+				50E38FA2206938FF00B2EA48 /* DashBoardViewController.swift */,
+				50AA958B207BA0BB003B5C1D /* SeaModel.xcdatamodeld */,
+				502FE7C020EA704300290838 /* FoodAndHotelModel.xcdatamodeld */,
+				50B2FBA120BD8DE80055C816 /* TidalTableViewController.swift */,
+				5025C1C520C04CFB005E0BAB /* TideStationCollectionViewController.swift */,
+				50D6577320C57DC800F51FF9 /* surfStationTidalCollectionViewCell.swift */,
+				503BBC2520D1581B00EDD8CE /* FoodMapViewController.swift */,
+				502287B020E12A7B00F4FD34 /* FoodAndHotelMapViewController.swift */,
+				5020177620E12E0200BDA802 /* FoodAndHotel.swift */,
+				5040D49E20E51AF30090A88C /* FoodAndHotelAnnotationView.swift */,
+				5016CB9F21513FB70032C1DF /* ARSeaViewController.swift */,
+			);
+			path = SurfingGood;
+			sourceTree = "<group>";
+		};
+		508480E21DF5392100F0CB9A /* SurfingGoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				508480E31DF5392100F0CB9A /* SurfingGoodTests.swift */,
+				508480E51DF5392100F0CB9A /* Info.plist */,
+			);
+			path = SurfingGoodTests;
+			sourceTree = "<group>";
+		};
+		508480ED1DF5392100F0CB9A /* SurfingGoodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				508480EE1DF5392100F0CB9A /* SurfingGoodUITests.swift */,
+				508480F01DF5392100F0CB9A /* Info.plist */,
+			);
+			path = SurfingGoodUITests;
+			sourceTree = "<group>";
+		};
+		51A7FA45D4C744FD9CE57EDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9927FA1B12C4B5CFFA8AE04A /* Pods-SurfingGood.debug.xcconfig */,
+				395E98379F53C7969117E030 /* Pods-SurfingGood.release.xcconfig */,
+				5E88A9A12461BB63E950F3F2 /* Pods-SurfingGoodTests.debug.xcconfig */,
+				787653AA0B13BB05D65CAED4 /* Pods-SurfingGoodTests.release.xcconfig */,
+				D392E7759957ECD2DC35439C /* Pods-SurfingGoodUITests.debug.xcconfig */,
+				AFD5F46CE1A371DBC3EE95D4 /* Pods-SurfingGoodUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE85E5960B899E811337C506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				055492E2037DBFCDAA8B2826 /* Pods_SurfingGood.framework */,
+				748B318FE29E5D88AD41D1A5 /* Pods_SurfingGoodTests.framework */,
+				107E1EC788B3B2D526D892ED /* Pods_SurfingGoodUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		508480C81DF5392000F0CB9A /* SurfingGood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508480F31DF5392100F0CB9A /* Build configuration list for PBXNativeTarget "SurfingGood" */;
+			buildPhases = (
+				FC8931812F76D254133B737B /* [CP] Check Pods Manifest.lock */,
+				508480C51DF5392000F0CB9A /* Sources */,
+				508480C61DF5392000F0CB9A /* Frameworks */,
+				508480C71DF5392000F0CB9A /* Resources */,
+				5015B6301DF7011F002726ED /* Embed Frameworks */,
+				10FF1DC56B55B98C48AA804C /* [CP] Embed Pods Frameworks */,
+				9D20D4E5997506D10A0E372C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SurfingGood;
+			productName = MXviewToGo;
+			productReference = 508480C91DF5392000F0CB9A /* SurfingGood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		508480DE1DF5392100F0CB9A /* SurfingGoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508480F61DF5392100F0CB9A /* Build configuration list for PBXNativeTarget "SurfingGoodTests" */;
+			buildPhases = (
+				3456669CC7FF363F8974F129 /* [CP] Check Pods Manifest.lock */,
+				508480DB1DF5392100F0CB9A /* Sources */,
+				508480DC1DF5392100F0CB9A /* Frameworks */,
+				508480DD1DF5392100F0CB9A /* Resources */,
+				7CE6E2B367A1E612A6104FDC /* [CP] Embed Pods Frameworks */,
+				95266D4F11B25C17C15DCEF7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				508480E11DF5392100F0CB9A /* PBXTargetDependency */,
+			);
+			name = SurfingGoodTests;
+			productName = MXviewToGoTests;
+			productReference = 508480DF1DF5392100F0CB9A /* SurfingGoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		508480E91DF5392100F0CB9A /* SurfingGoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508480F91DF5392100F0CB9A /* Build configuration list for PBXNativeTarget "SurfingGoodUITests" */;
+			buildPhases = (
+				1DB3D3F5D49402F7E3DA99A8 /* [CP] Check Pods Manifest.lock */,
+				508480E61DF5392100F0CB9A /* Sources */,
+				508480E71DF5392100F0CB9A /* Frameworks */,
+				508480E81DF5392100F0CB9A /* Resources */,
+				F95AB95E614A9BF61E84DE52 /* [CP] Embed Pods Frameworks */,
+				559DC78559429F75A337C82A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				508480EC1DF5392100F0CB9A /* PBXTargetDependency */,
+			);
+			name = SurfingGoodUITests;
+			productName = MXviewToGoUITests;
+			productReference = 508480EA1DF5392100F0CB9A /* SurfingGoodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		508480C11DF5392000F0CB9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = liusean;
+				TargetAttributes = {
+					508480C81DF5392000F0CB9A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8K5VD4697C;
+						ProvisioningStyle = Automatic;
+					};
+					508480DE1DF5392100F0CB9A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 508480C81DF5392000F0CB9A;
+					};
+					508480E91DF5392100F0CB9A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 508480C81DF5392000F0CB9A;
+					};
+				};
+			};
+			buildConfigurationList = 508480C41DF5392000F0CB9A /* Build configuration list for PBXProject "SurfingGood" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 508480C01DF5392000F0CB9A;
+			productRefGroup = 508480CA1DF5392000F0CB9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				508480C81DF5392000F0CB9A /* SurfingGood */,
+				508480DE1DF5392100F0CB9A /* SurfingGoodTests */,
+				508480E91DF5392100F0CB9A /* SurfingGoodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		508480C71DF5392000F0CB9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C659A51E267A2E0041C901 /* Main.storyboard in Resources */,
+				508480D91DF5392100F0CB9A /* LaunchScreen.storyboard in Resources */,
+				508480D61DF5392100F0CB9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508480DD1DF5392100F0CB9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508480E81DF5392100F0CB9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10FF1DC56B55B98C48AA804C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurfingGood/Pods-SurfingGood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DB3D3F5D49402F7E3DA99A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3456669CC7FF363F8974F129 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		559DC78559429F75A337C82A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurfingGoodUITests/Pods-SurfingGoodUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE6E2B367A1E612A6104FDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurfingGoodTests/Pods-SurfingGoodTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95266D4F11B25C17C15DCEF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurfingGoodTests/Pods-SurfingGoodTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D20D4E5997506D10A0E372C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurfingGood/Pods-SurfingGood-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F95AB95E614A9BF61E84DE52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurfingGoodUITests/Pods-SurfingGoodUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8931812F76D254133B737B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		508480C51DF5392000F0CB9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508480CD1DF5392000F0CB9A /* AppDelegate.swift in Sources */,
+				50AA958D207BA0BB003B5C1D /* SeaModel.xcdatamodeld in Sources */,
+				5040D49F20E51AF30090A88C /* FoodAndHotelAnnotationView.swift in Sources */,
+				50B2FBA220BD8DE80055C816 /* TidalTableViewController.swift in Sources */,
+				5025C1C620C04CFB005E0BAB /* TideStationCollectionViewController.swift in Sources */,
+				50D6577420C57DC800F51FF9 /* surfStationTidalCollectionViewCell.swift in Sources */,
+				502FE7C220EA704300290838 /* FoodAndHotelModel.xcdatamodeld in Sources */,
+				50E38FA3206938FF00B2EA48 /* DashBoardViewController.swift in Sources */,
+				50009EDD20F6300700B7C71C /* LocationSearchTableViewController.swift in Sources */,
+				50E877EE20A43E6E00753E3B /* WeatherTableViewController.swift in Sources */,
+				50C659961E2679420041C901 /* MainTabBarController.swift in Sources */,
+				50E38F9520692EF400B2EA48 /* surfLocationViewCollectionViewCell.swift in Sources */,
+				50CEA80D1E0032870004BC38 /* LoginViewController.swift in Sources */,
+				503BBC2620D1581B00EDD8CE /* FoodMapViewController.swift in Sources */,
+				5020177720E12E0200BDA802 /* FoodAndHotel.swift in Sources */,
+				50AA959D207BA382003B5C1D /* surfingDataService.swift in Sources */,
+				50CFB649200E499C00F0F9AF /* ObserveStationTableViewController.swift in Sources */,
+				502FE7D020EA739800290838 /* foodAndHotelDataService.swift in Sources */,
+				5016CBA021513FB70032C1DF /* ARSeaViewController.swift in Sources */,
+				50917B5C1E1121C700DEB70D /* Constant.swift in Sources */,
+				508793D32003B4FC00A68CED /* SeaTableViewController.swift in Sources */,
+				502287B120E12A7B00F4FD34 /* FoodAndHotelMapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508480DB1DF5392100F0CB9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508480E41DF5392100F0CB9A /* SurfingGoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508480E61DF5392100F0CB9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508480EF1DF5392100F0CB9A /* SurfingGoodUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		508480E11DF5392100F0CB9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 508480C81DF5392000F0CB9A /* SurfingGood */;
+			targetProxy = 508480E01DF5392100F0CB9A /* PBXContainerItemProxy */;
+		};
+		508480EC1DF5392100F0CB9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 508480C81DF5392000F0CB9A /* SurfingGood */;
+			targetProxy = 508480EB1DF5392100F0CB9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		508480D71DF5392100F0CB9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				508480D81DF5392100F0CB9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		50C659A31E267A2E0041C901 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C659A41E267A2E0041C901 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		508480F11DF5392100F0CB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		508480F21DF5392100F0CB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		508480F41DF5392100F0CB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9927FA1B12C4B5CFFA8AE04A /* Pods-SurfingGood.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8K5VD4697C;
+				INFOPLIST_FILE = SurfingGood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richjob.SurfingGood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		508480F51DF5392100F0CB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 395E98379F53C7969117E030 /* Pods-SurfingGood.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8K5VD4697C;
+				INFOPLIST_FILE = SurfingGood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richjob.SurfingGood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		508480F71DF5392100F0CB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E88A9A12461BB63E950F3F2 /* Pods-SurfingGoodTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MXviewToGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richjob.MXviewToGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SurfingGood.app/SurfingGood";
+			};
+			name = Debug;
+		};
+		508480F81DF5392100F0CB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 787653AA0B13BB05D65CAED4 /* Pods-SurfingGoodTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MXviewToGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richjob.MXviewToGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SurfingGood.app/SurfingGood";
+			};
+			name = Release;
+		};
+		508480FA1DF5392100F0CB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D392E7759957ECD2DC35439C /* Pods-SurfingGoodUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MXviewToGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richjob.MXviewToGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MXviewToGo;
+			};
+			name = Debug;
+		};
+		508480FB1DF5392100F0CB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD5F46CE1A371DBC3EE95D4 /* Pods-SurfingGoodUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MXviewToGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richjob.MXviewToGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MXviewToGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		508480C41DF5392000F0CB9A /* Build configuration list for PBXProject "SurfingGood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508480F11DF5392100F0CB9A /* Debug */,
+				508480F21DF5392100F0CB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		508480F31DF5392100F0CB9A /* Build configuration list for PBXNativeTarget "SurfingGood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508480F41DF5392100F0CB9A /* Debug */,
+				508480F51DF5392100F0CB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		508480F61DF5392100F0CB9A /* Build configuration list for PBXNativeTarget "SurfingGoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508480F71DF5392100F0CB9A /* Debug */,
+				508480F81DF5392100F0CB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		508480F91DF5392100F0CB9A /* Build configuration list for PBXNativeTarget "SurfingGoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508480FA1DF5392100F0CB9A /* Debug */,
+				508480FB1DF5392100F0CB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		502FE7C020EA704300290838 /* FoodAndHotelModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				502FE7C120EA704300290838 /* FoodAndHotelModel.xcdatamodel */,
+			);
+			currentVersion = 502FE7C120EA704300290838 /* FoodAndHotelModel.xcdatamodel */;
+			path = FoodAndHotelModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		50AA958B207BA0BB003B5C1D /* SeaModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				50AA958C207BA0BB003B5C1D /* SeaModel.xcdatamodel */,
+			);
+			currentVersion = 50AA958C207BA0BB003B5C1D /* SeaModel.xcdatamodel */;
+			path = SeaModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 508480C11DF5392000F0CB9A /* Project object */;
+}
