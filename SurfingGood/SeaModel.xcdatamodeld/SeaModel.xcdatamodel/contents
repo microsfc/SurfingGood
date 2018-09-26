@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SeaStatus" representedClassName="SeaStatus" syncable="YES" codeGenerationType="class">
+        <attribute name="seaTemperature" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="WaveStatus" representedClassName="WaveStatus" syncable="YES" codeGenerationType="class">
+        <attribute name="waveDuration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="waveHeigh" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="WindStatus" representedClassName="WindStatus" syncable="YES" codeGenerationType="class">
+        <attribute name="averageWindSpeed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="maxWindSpeed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SeaStatus" positionX="-207" positionY="-234" width="128" height="60"/>
+        <element name="WaveStatus" positionX="-54" positionY="18" width="128" height="75"/>
+        <element name="WindStatus" positionX="-198" positionY="195" width="128" height="75"/>
+    </elements>
+</model>

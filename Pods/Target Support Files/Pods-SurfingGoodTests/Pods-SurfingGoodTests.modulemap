@@ -1,0 +1,6 @@
+framework module Pods_SurfingGoodTests {
+  umbrella header "Pods-SurfingGoodTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
