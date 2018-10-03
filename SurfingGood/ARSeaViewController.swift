@@ -54,19 +54,26 @@ class ARSeaViewController: UIViewController {
     }
     
     func addText(text: NSString, x: Float = 0, y: Float = 0, z: Float = -0.2) {
-        let showText = SCNText(string: text, extrusionDepth: 5.0)
-        var x = 0.0
-        var delta = 0.0
-        showText.firstMaterial?.diffuse.contents = UIColor.orange
-        showText.firstMaterial?.specular.contents = UIColor.orange
-        showText.font = UIFont(name: "Optima", size: 44)
-        showText.containerFrame = CGRect(x: 0, y: 0, width: 100, height: 44)
+//        let showText = SCNText(string: text, extrusionDepth: 5.0)
+//        var x = 0.0
+//        var delta = 0.0
+//        showText.firstMaterial?.diffuse.contents = UIColor.orange
+//        showText.firstMaterial?.specular.contents = UIColor.orange
+//        showText.font = UIFont(name: "Optima", size: 44)
+//        showText.containerFrame = CGRect(x: 0, y: 0, width: 100, height: 44)
+//        x += 0.12
+//        delta += 0.12
         
-        let textNode = SCNNode(geometry: showText)
-        textNode.position = SCNVector3(-0.2 + x, -0.9 + delta, -1)
+//        let textNode = SCNNode(geometry: showText)
+//        textNode.position = SCNVector3(-0.2 + x, -0.9 + delta, -1)
         
-        x += 0.12
-        delta += 0.12
+        
+        let textGeometry = SCNText(string: "Hello World", extrusionDepth: 1.0)
+        textGeometry.firstMaterial?.diffuse.contents = UIColor.black
+        
+        let textNode = SCNNode(geometry: textGeometry)
+        textNode.position = SCNVector3(0,0.1,-1)
+        textNode.scale = SCNVector3(0.5,0.5,0.5)
         
         // self.node.addChildNode(boxNode)
         sceneView.scene.rootNode.addChildNode(textNode)  // this never displays the text node
@@ -88,7 +95,7 @@ class ARSeaViewController: UIViewController {
             if let hitTestResultWithFeaturePoints = hitTestResultsWithFeaturePoints.first {
                 let translation = hitTestResultWithFeaturePoints.worldTransform.translation
                 addBox(x: translation.x, y: translation.y, z: translation.z)
-                addText(text: "AR Text", x: translation.x, y: translation.y, z: translation.z)
+//                addText(text: "AR Text", x: translation.x, y: translation.y, z: translation.z)
             }
             return
         }
