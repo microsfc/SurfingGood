@@ -14,8 +14,7 @@ class ARSeaViewController: UIViewController {
     @IBOutlet weak var sceneView: ARSCNView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addBox()
+//        addBox()
         addTapGestureToSceneView()
         // Do any additional setup after loading the view.
     }
@@ -66,17 +65,33 @@ class ARSeaViewController: UIViewController {
         
 //        let textNode = SCNNode(geometry: showText)
 //        textNode.position = SCNVector3(-0.2 + x, -0.9 + delta, -1)
-        
-        
-        let textGeometry = SCNText(string: "Hello World", extrusionDepth: 1.0)
-        textGeometry.firstMaterial?.diffuse.contents = UIColor.black
-        
-        let textNode = SCNNode(geometry: textGeometry)
-        textNode.position = SCNVector3(0,0.1,-1)
-        textNode.scale = SCNVector3(0.5,0.5,0.5)
-        
-        // self.node.addChildNode(boxNode)
-        sceneView.scene.rootNode.addChildNode(textNode)  // this never displays the text node
+       
+//        let hitTransform = SCNMatrix4(result.worldTransform)
+//        let hitPosition = SCNVector3Make(hitTransform.m41,hitTransform.m42,hitTransform.m43)
+//
+//        let text = SCNText(string: "HELLO :)", extrusionDepth: 0.02)
+//        let font = UIFont(name: "Futura", size: 0.15)
+//        text.font = font
+//        text.alignmentMode = kCAAlignmentCenter
+//        text.firstMaterial?.diffuse.contents = UIColor.red
+//        text.firstMaterial?.specular.contents = UIColor.white
+//        text.firstMaterial?.isDoubleSided = true
+//        text.chamferRadius = 0.01
+//
+//        let (minBound, maxBound) = text.boundingBox
+//        let textNode = SCNNode(geometry: text)
+//        textNode.pivot = SCNMatrix4MakeTranslation( (maxBound.x - minBound.x)/2, minBound.y, 0.02/2)
+//        textNode.scale = SCNVector3Make(0.1, 0.1, 0.1)
+//        textNode.position = hitPosition
+//
+//        let textGeometry = SCNText(string: "Hello World", extrusionDepth: 1.0)
+//        textGeometry.firstMaterial?.diffuse.contents = UIColor.black
+//
+//        textNode.position = SCNVector3(0,0.1,-1)
+//        textNode.scale = SCNVector3(0.5,0.5,0.5)
+//
+//        // self.node.addChildNode(boxNode)
+//        sceneView.scene.rootNode.addChildNode(textNode)  // this never displays the text node
     }
     
     func addTapGestureToSceneView() {
@@ -94,7 +109,31 @@ class ARSeaViewController: UIViewController {
             let hitTestResultsWithFeaturePoints = sceneView.hitTest(tapLocation, types: .featurePoint)
             if let hitTestResultWithFeaturePoints = hitTestResultsWithFeaturePoints.first {
                 let translation = hitTestResultWithFeaturePoints.worldTransform.translation
-                addBox(x: translation.x, y: translation.y, z: translation.z)
+//                addBox(x: translation.x, y: translation.y, z: translation.z)
+                let text = SCNText(string: "HELLO :)", extrusionDepth: 0.02)
+                        let font = UIFont(name: "Futura", size: 0.15)
+                        let hitPosition = SCNVector3Make(translation.x, translation.y,translation.z)
+                        text.font = font
+                        text.alignmentMode = kCAAlignmentCenter
+                        text.firstMaterial?.diffuse.contents = UIColor.red
+                        text.firstMaterial?.specular.contents = UIColor.white
+                        text.firstMaterial?.isDoubleSided = true
+                        text.chamferRadius = 0.01
+                
+                        let (minBound, maxBound) = text.boundingBox
+                        let textNode = SCNNode(geometry: text)
+                        textNode.pivot = SCNMatrix4MakeTranslation( (maxBound.x - minBound.x)/2, minBound.y, 0.02/2)
+                        textNode.scale = SCNVector3Make(0.1, 0.1, 0.1)
+                        textNode.position = hitPosition
+                
+                        let textGeometry = SCNText(string: "Hello World", extrusionDepth: 1.0)
+                        textGeometry.firstMaterial?.diffuse.contents = UIColor.black
+                
+                        textNode.position = SCNVector3(0,0.1,-1)
+                        textNode.scale = SCNVector3(0.5,0.5,0.5)
+                
+                        // self.node.addChildNode(boxNode)
+                        sceneView.scene.rootNode.addChildNode(textNode)  // this nev
 //                addText(text: "AR Text", x: translation.x, y: translation.y, z: translation.z)
             }
             return
