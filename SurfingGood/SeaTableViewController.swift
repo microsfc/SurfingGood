@@ -28,6 +28,8 @@ class SeaTableViewController: UITableViewController {
     open var stationId: String = "";
     open var stationName: String = "";
     var dateString = "";
+    let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    
     
     @IBOutlet var seaTableView: UITableView!
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +40,8 @@ class SeaTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.spinner.startAnimating()
+        self.tableView.backgroundView = self.spinner
 
         do {
 //            let opt = try HTTP.GET("http://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0018-001", parameters: ["stationId": self.stationId, "limit": "100"], headers: ["authorization": "CWB-6374C03F-A414-4F8C-99C8-5919A68EA0AD"])
@@ -219,6 +223,8 @@ class SeaTableViewController: UITableViewController {
                         for i in sea {
                             print("sea temperature \(i.seaTemperature)")
                         }
+                        self.spinner.stopAnimating()
+                        self.tableView.backgroundView = nil
                     }
 //                    for (key, value) in recordJSON? {
 //                        // access all key / value pairs in dictionary

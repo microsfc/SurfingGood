@@ -25,11 +25,16 @@ class TidalTableViewController: UITableViewController {
     var sortedTideStatusArray: [NSMutableDictionary] = []
     var sortedTimeArray: [NSMutableDictionary] = []
     
+    let loadingView = UIView()
+    let spinner = UIActivityIndicatorView()
+    let loadingLabel = UILabel()
+    
     @IBOutlet var tideStatusTableView: UITableView!
     
     override func viewDidLoad() {
         self.navigationController?.isNavigationBarHidden = false
         super.viewDidLoad()
+        self.setLoadingScreen()
         self.getTaiwanTidalStatus(_dataId: "F-A0021-001") // 潮汐
         self.title = "\(self.locationName) 潮汐"
         // Uncomment the following line to preserve selection between presentations
@@ -42,6 +47,39 @@ class TidalTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func setLoadingScreen() {
+        let width:CGFloat = 120
+        let height:CGFloat = 30
+        
+        let x = (self.tableView.frame.width / 2) - (width / 2)
+        let y = (self.tableView.frame.height / 2) - (height / 2)
+        loadingView.frame = CGRect(x: x, y: y, width: width, height: height)
+        
+        loadingLabel.textColor = .gray
+        loadingLabel.textAlignment = .center
+        loadingLabel.text = "Loading..."
+        loadingLabel.frame = CGRect(x: 0, y: 0, width: 120, height:30)
+        
+        spinner.activityIndicatorViewStyle = .gray
+        spinner.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        spinner.startAnimating()
+        
+        loadingView.addSubview(spinner)
+        loadingView.addSubview(loadingLabel)
+        
+        self.tableView.addSubview(loadingView)
+        
+    }
+    
+    private func removeLoadingScreen() {
+        DispatchQueue.main.sync {
+            spinner.stopAnimating()
+            spinner.isHidden = true
+            loadingLabel.isHidden = true
+            self.loadingView.removeFromSuperview()
+        }
     }
     
     func getTaiwanTidalStatus(_dataId: String) -> Void {
@@ -100,19 +138,30 @@ class TidalTableViewController: UITableViewController {
                                                     }
                                                     self.sortedTideStatusArray = self.tideStatusDataArray.sorted{ one , two in
                                                         return (one["tidalTime"] as! String) < (two["tidalTime"] as! String) }
-                                                    DispatchQueue.main.sync {
-                                                        self.tideStatusTableView.reloadData()
-                                                    }
                                                 }
                                             }
                                         }
                                     }
                                 }
+                                DispatchQueue.main.sync {
+                                    self.tideStatusTableView.reloadData()
+                                }
+                                self.removeLoadingScreen()
+                            } else {
+                                self.removeLoadingScreen()
                             }
+                        } else {
+                            self.removeLoadingScreen()
                         }
+                    } else {
+                        self.removeLoadingScreen()
                     }
+                } else {
+                    self.removeLoadingScreen()
                 }
                 
+            } else {
+                self.removeLoadingScreen()
             }
         }
     }
