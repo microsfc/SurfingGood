@@ -15,8 +15,8 @@ class ObserveStationCell: UITableViewCell {
 
 class ObserveStationTableViewController: UITableViewController {
 
-    var stationName = ["頭城鎮", "宜蘭市", "南澳鄉","萬里區", "貢寮區"]
-    var stationDataId = ["F-D0047-001", "F-D0047-001", "F-D0047-001", "F-D0047-069", "F-D0047-069"]
+    var stationName = ["頭城鎮", "金山區", "萬里區", "貢寮區", "恆春鎮", "東河鄉", "竹南鎮", "安平區", "旗津區"]
+    var stationDataId = ["F-D0047-001", "F-D0047-069", "F-D0047-069", "F-D0047-069","F-D0047-033", "F-D0047-037","F-D0047-013", "F-D0047-077", "F-D0047-065"]
     
     
     

@@ -89,15 +89,6 @@ class SeaTableViewController: UITableViewController {
                                     guard let elementValue = object4["elementValue"] as? String else {
                                         continue
                                     }
-//                                    if jsonObject["陣風"] != nil {
-//                                        continue
-//                                    }
-//                                    if jsonObject["平均風"] != nil {
-//                                        continue
-//                                    }
-//                                    if jsonObject["風向"] != nil {
-//                                        continue
-//                                    }
                                     let elementName = object4["elementName"] as! String
                                     print("elementName=\(elementName)")
                                     switch elementName {

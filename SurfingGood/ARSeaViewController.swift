@@ -126,8 +126,8 @@ class ARSeaViewController: UIViewController {
                         textNode.scale = SCNVector3Make(0.1, 0.1, 0.1)
                         textNode.position = hitPosition
                 
-                        let textGeometry = SCNText(string: "Hello World", extrusionDepth: 1.0)
-                        textGeometry.firstMaterial?.diffuse.contents = UIColor.black
+//                        let textGeometry = SCNText(string: "Hello World", extrusionDepth: 1.0)
+//                        textGeometry.firstMaterial?.diffuse.contents = UIColor.black
                 
 //                        textNode.position = SCNVector3(0,0.1,-1)
 //                        textNode.scale = SCNVector3(0.5,0.5,0.5)
